@@ -15,7 +15,7 @@ permalink: /porcolor/
 </script>
 
   
-<img src="1D23467090FF12AC96B64C934B8CE494.jpg" alt="Paul Soto pic" style="width:210px;height:290px;" title="Linxuan Li"; algin="middle">
+<img src="profile_picture.jpg" alt="Paul Soto pic" style="width:210px;height:290px;" title="Linxuan Li"; algin="middle">
 <br>
  
 
