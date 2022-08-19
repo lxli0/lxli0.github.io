@@ -1,3 +1,8 @@
+---
+layout: page
+title: PORCOLOR
+permalink: /porcolor/
+---
 
 <div class="porcolor">
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108085250-1"></script>
