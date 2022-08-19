@@ -3,4 +3,5 @@ layout: page
 title: PORCOLOR
 permalink: /porcolor/
 ---
-PORCOLOR_UPLOAD/1.png
+<img src="PORCOLOR_UPLOAD/1.png" alt="Paul Soto pic" style="width:210px;height:290px;" title="Linxuan Li"; algin="middle">
+
