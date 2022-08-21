@@ -4,7 +4,9 @@ title: PORCOLOR
 permalink: /porcolor/
 ---
 
-
+<body>
+    &#10148
+</body>
  &#8194
   &#8194
   Like many geophysicists, I find visualization fascinating. Currently, I am trying to build a color database called <b>PORCOLOR</b> utilizing traditional Chinese porcelain. Finding a non-repeating color scheme suitable for scientific research from numerous artifacts is not an easy task. I will update it from time to time.
