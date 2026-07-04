@@ -7,19 +7,20 @@ permalink: /gallery/
 <style>
 .gallery-grid {
     columns: 3;
-    column-gap: 20px;
-    max-width: 1400px;
+    column-gap: 24px;
+
+    width: min(95vw, 1800px);
     margin: 0 auto;
 }
 
 .gallery-grid img {
     width: 100%;
     display: block;
-    margin-bottom: 20px;
-    border-radius: 6px;
-    transition: transform 0.25s ease;
+    margin-bottom: 24px;
+    border-radius: 8px;
     break-inside: avoid;
     -webkit-column-break-inside: avoid;
+    transition: transform 0.25s ease;
 }
 
 .gallery-grid img:hover {
