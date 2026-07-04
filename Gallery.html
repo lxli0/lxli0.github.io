@@ -5,74 +5,49 @@ permalink: /gallery/
 ---
 
 <style>
-/* Break out of the theme's page width */
-.page-content,
-.wrapper,
-.page,
-.post,
-article {
-    max-width: none !important;
-    width: 100% !important;
-}
-
-/* Gallery */
 .gallery-grid {
-    columns: 3;
+    column-count: 3;
     column-gap: 24px;
-
-    width: min(94vw, 1800px);
-
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 94vw;
+    max-width: 1800px;
+    margin-left: calc(50% - 47vw);
 }
 
 .gallery-grid img {
     width: 100%;
     display: block;
     margin-bottom: 24px;
-
     border-radius: 8px;
-
     break-inside: avoid;
-    -webkit-column-break-inside: avoid;
-
-    transition: transform .25s ease;
-}
-
-.gallery-grid img:hover {
-    transform: scale(1.02);
 }
 
 @media (max-width: 1200px) {
     .gallery-grid {
-        columns: 2;
-        width: 94vw;
+        column-count: 2;
     }
 }
 
 @media (max-width: 700px) {
     .gallery-grid {
-        columns: 1;
-        width: 94vw;
+        column-count: 1;
     }
 }
 </style>
 
 <div class="gallery-grid">
-    <img src="/photo/photo0.jpg" alt="">
-    <img src="/photo/photo1.jpg" alt="">
-    <img src="/photo/photo2.jpg" alt="">
-    <img src="/photo/photo3.jpg" alt="">
-    <img src="/photo/photo4.jpg" alt="">
-    <img src="/photo/photo5.jpg" alt="">
-    <img src="/photo/photo6.jpg" alt="">
-    <img src="/photo/photo7.jpg" alt="">
-    <img src="/photo/photo8.jpg" alt="">
-    <img src="/photo/photo9.jpg" alt="">
-    <img src="/photo/photo10.jpg" alt="">
-    <img src="/photo/photo11.jpg" alt="">
-    <img src="/photo/photo12.jpg" alt="">
-    <img src="/photo/photo13.jpg" alt="">
-    <img src="/photo/photo14.jpg" alt="">
+    <img src="{{ '/photo/photo0.jpg' | relative_url }}" alt="">
+    <img src="{{ '/photo/photo1.jpg' | relative_url }}" alt="">
+    <img src="{{ '/photo/photo2.jpg' | relative_url }}" alt="">
+    <img src="{{ '/photo/photo3.jpg' | relative_url }}" alt="">
+    <img src="{{ '/photo/photo4.jpg' | relative_url }}" alt="">
+    <img src="{{ '/photo/photo5.jpg' | relative_url }}" alt="">
+    <img src="{{ '/photo/photo6.jpg' | relative_url }}" alt="">
+    <img src="{{ '/photo/photo7.jpg' | relative_url }}" alt="">
+    <img src="{{ '/photo/photo8.jpg' | relative_url }}" alt="">
+    <img src="{{ '/photo/photo9.jpg' | relative_url }}" alt="">
+    <img src="{{ '/photo/photo10.jpg' | relative_url }}" alt="">
+    <img src="{{ '/photo/photo11.jpg' | relative_url }}" alt="">
+    <img src="{{ '/photo/photo12.jpg' | relative_url }}" alt="">
+    <img src="{{ '/photo/photo13.jpg' | relative_url }}" alt="">
+    <img src="{{ '/photo/photo14.jpg' | relative_url }}" alt="">
 </div>
