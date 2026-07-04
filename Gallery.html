@@ -5,37 +5,56 @@ permalink: /gallery/
 ---
 
 <style>
+/* Break out of the theme's page width */
+.page-content,
+.wrapper,
+.page,
+.post,
+article {
+    max-width: none !important;
+    width: 100% !important;
+}
+
+/* Gallery */
 .gallery-grid {
     columns: 3;
     column-gap: 24px;
 
-    width: min(95vw, 1800px);
-    margin: 0 auto;
+    width: min(94vw, 1800px);
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .gallery-grid img {
     width: 100%;
     display: block;
     margin-bottom: 24px;
+
     border-radius: 8px;
+
     break-inside: avoid;
     -webkit-column-break-inside: avoid;
-    transition: transform 0.25s ease;
+
+    transition: transform .25s ease;
 }
 
 .gallery-grid img:hover {
     transform: scale(1.02);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .gallery-grid {
         columns: 2;
+        width: 94vw;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .gallery-grid {
         columns: 1;
+        width: 94vw;
     }
 }
 </style>
