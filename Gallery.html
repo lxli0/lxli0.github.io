@@ -3,36 +3,40 @@ layout: page
 title: Gallery
 permalink: /gallery/
 ---
-<table>
-    <tr>
-        <td><img src="../photo/photo0.jpg" border=0></td>
-        <td>
-            <table>
-                <tr>
-                    <td><img src="../photo/photo1.jpg" border=0></td>
-                </tr>
-                <tr>
-                    <td><img src="../photo/photo2.jpg" border=0></td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
+<style>
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
 
-<table>
-    <tr>
-        <td>
-            <table>
-                <tr>
-                    <td><img src="../photo/photo5.jpg" border=0></td>
-                </tr>
-                <tr>
-                    <td><img src="../photo/photo6.jpg" border=0></td>
-                </tr>
-            </table>
-        </td>
-        <td><img src="../photo/photo7.jpg" border=0></td>
-    </tr>
-</table>
-<br>
+.gallery-grid img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border: none;
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<div class="gallery-grid">
+  <img src="../photo/photo0.jpg">
+  <img src="../photo/photo1.jpg">
+  <img src="../photo/photo2.jpg">
+  <img src="../photo/photo5.jpg">
+  <img src="../photo/photo6.jpg">
+  <img src="../photo/photo7.jpg">
+</div>
 
