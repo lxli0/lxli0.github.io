@@ -5,38 +5,48 @@ permalink: /gallery/
 ---
 <style>
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
+    columns: 3;
+    column-gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
-.gallery-grid img {
-  width: 100%;
-  height: 230px;
-  object-fit: cover;
-  border: none;
-  display: block;
+  .gallery-grid img {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    transition: transform 0.25s ease;
 }
 
-@media (max-width: 800px) {
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.gallery-grid img:hover {
+    transform: scale(1.02);
+}
+  
+@media (max-width: 1000px) {
+    .gallery-grid {
+        columns: 2;
+    }
 }
 
-@media (max-width: 500px) {
-  .gallery-grid {
-    grid-template-columns: 1fr;
-  }
+@media (max-width: 600px) {
+    .gallery-grid {
+        columns: 1;
+    }
 }
 </style>
 
 <div class="gallery-grid">
-  <img src="../photo/photo0.jpg">
-  <img src="../photo/photo1.jpg">
-  <img src="../photo/photo2.jpg">
-  <img src="../photo/photo5.jpg">
-  <img src="../photo/photo6.jpg">
-  <img src="../photo/photo7.jpg">
+    <img src="../photo/photo0.jpg" alt="">
+    <img src="../photo/photo1.jpg" alt="">
+    <img src="../photo/photo2.jpg" alt="">
+    <img src="../photo/photo3.jpg" alt="">
+    <img src="../photo/photo4.jpg" alt="">
+    <img src="../photo/photo5.jpg" alt="">
+    <img src="../photo/photo6.jpg" alt="">
+    <img src="../photo/photo7.jpg" alt="">
+    <img src="../photo/photo8.jpg" alt="">
+    <img src="../photo/photo9.jpg" alt="">
+    <!-- 后面继续添加 -->
 </div>
 
